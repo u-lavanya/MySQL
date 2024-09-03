@@ -90,4 +90,3 @@ DROP TABLE pastries;
 /* multiple line comments*/
 /* '--' to all lines by highlighting the lines and click command + forward slas (/) */
 
-

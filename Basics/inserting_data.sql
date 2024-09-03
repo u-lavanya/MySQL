@@ -7,3 +7,4 @@ INSERT INTO cats(name,age) VALUES('cherry' , 2);
 
 -- we can view the table content 
 SELECT * FROM cats;
+

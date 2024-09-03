@@ -48,3 +48,46 @@ CREATE TABLE dogs (
     age INT
 );
 
+-- DISPLAYS THE TABLES IN THE CURRENT DATABASE
+SHOW tables;
+
+--SHOW THE DESCRIPTION OF THE TABLES
+SHOW COLUMNS FROM cats;
+
+--OTHER WAYS OF DESCRIBING THE TABLE
+DESC cats;
+
+--DELETING THE TABLE
+-- syntaxx-  DROP TABLE <tablename>;
+
+DROP TABLE dogs;
+
+--To drop a table:
+
+--DROP TABLE <table-name>;
+
+--To specifically drop the cats table:
+
+DROP TABLE cats;
+
+--Create the table:
+CREATE TABLE pastries
+  (
+    name VARCHAR(50),
+    quantity INT
+  );
+
+--View tables:
+SHOW TABLES;
+
+--View details of pastries table:
+DESC pastries;
+
+--Delete the whole pastries table:
+DROP TABLE pastries;
+
+-- single line comment
+/* multiple line comments*/
+/* '--' to all lines by highlighting the lines and click command + forward slas (/) */
+
+

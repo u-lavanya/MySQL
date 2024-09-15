@@ -95,3 +95,58 @@ CREATE TABLE cats4  (
     name VARCHAR(20) NOT NULL DEFAULT 'unnamed',    
     age INT NOT NULL DEFAULT 99 
 );
+
+--primary key means unique identifier.
+--used as a unique identifier for each individual row 
+
+--One way of specifying a PRIMARY KEY
+CREATE TABLE unique_cats (
+	cat_id INT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    age INT NOT NULL
+);
+
+
+-- Another option:
+
+CREATE TABLE unique_cats2 (
+	cat_id INT,
+    name VARCHAR(100) NOT NULL,
+    age INT NOT NULL,
+    PRIMARY KEY (cat_id)
+);
+--making a variable or an id as primary key makes it redundant
+--that varibale would not take null values i.e  adding a NOT NULL keyword is not needed.
+
+--setting up AUTO_INCREMENT on your PRIMARY KEY fields.
+--cat_id was automatically assigned and it's set to 1.
+--  AUTO_INCREMENT
+
+CREATE TABLE unique_cats3 (
+    cat_id INT AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    age INT NOT NULL,
+    PRIMARY KEY (cat_id)
+);
+
+--  AUTO_INCREMENT
+CREATE TABLE unique_cats3 (
+    cat_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    age INT NOT NULL
+);
+
+--EXERCISE
+
+CREATE TABEL Employee(
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  lastname VARCHAR(20) NOT NULL,
+  firstname VARCHAR(20) NOT NULL,
+  middlename VARCHAR(20),
+  age INT NOT NULL,
+  currentstatus VARCHAR(20) NOT NULL DEFAULT 'Employed'
+);
+
+
+
+

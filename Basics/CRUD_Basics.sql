@@ -1,0 +1,4 @@
+--So how do we change something in our database if we made a mistake?
+-- typically we can alter our database 
+--CRUD is an acronym. It stands for create, read, update, and delete. 
+--Four operations that we often will do, will perform on different rows of data
